@@ -383,12 +383,6 @@
             <label class="field-label" for="fTarimaLargo">Largo (cm)</label>
             <input id="fTarimaLargo" type="text" class="form-input" disabled>
           </div>
-
-          <div class="field field-hidden" data-req-torre id="wrapTransportesTorre" style="grid-column: 1 / -1">
-            <span class="field-label" id="transportTorreLabel">Unidades de transporte</span>
-            <div class="checkbox-grid" id="transportGridTorre" role="group" aria-labelledby="transportTorreLabel"></div>
-            <span class="field-error" id="fTransportes-error" hidden></span>
-          </div>
         </div>
       </section>
 
@@ -418,9 +412,11 @@
         </div>
       </section>
 
-      <section class="form-section field-hidden" data-hide-torre id="transportSection" aria-labelledby="secTransporte">
+      <section class="form-section" id="transportSection" aria-labelledby="secTransporte">
         <div class="section-head"><h2 class="section-title" id="secTransporte">Configuraciones de transporte</h2></div>
-        <div class="checkbox-grid" id="transportGrid"></div>
+        <div class="checkbox-grid field-hidden" data-req-torre id="transportGridTorre" role="group" aria-labelledby="secTransporte"></div>
+        <div class="checkbox-grid field-hidden" data-hide-torre id="transportGrid" role="group" aria-labelledby="secTransporte"></div>
+        <span class="field-error" id="fTransportes-error" hidden></span>
       </section>
 
       <div class="form-actions">
